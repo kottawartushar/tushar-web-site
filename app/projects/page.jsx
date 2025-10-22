@@ -53,7 +53,7 @@ export default async function ProjectsPage() {
                   </h3>
 
                   {p.description && (
-                    <p className="text-slate-600 text-base leading-relaxed tracking-wide mx-auto max-w-prose mb-2">
+                    <p className="text-slate-600 text-base leading-relaxed tracking-wide mx-auto max-w-prose mb-3">
                       {p.description}
                     </p>
                   )}
