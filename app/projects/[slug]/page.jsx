@@ -8,7 +8,10 @@ export async function generateStaticParams() {
 }
 
 export default async function ProjectDetail({ params }) {
-  const { slug } = params;
+  // params may be a Promise in this Next.js runtime — unwrap it first
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
+
   try {
     const { frontmatter, mdxSource } = await getMDXFromFile(`projects/${slug}.md`);
     return (
