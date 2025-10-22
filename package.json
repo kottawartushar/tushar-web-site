@@ -1,0 +1,30 @@
+{
+  "name": "tushar-kottawar-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "clsx": "^1.2.1",
+    "gray-matter": "^4.0.3",
+    "next-mdx-remote": "^4.3.0",
+    "framer-motion": "^10.12.14",
+    "react-icons": "^4.11.0",
+    "remark-gfm": "^3.0.1",
+    "rehype-highlight": "^6.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.4.0",
+    "postcss": "^8.5.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "8.40.0",
+    "eslint-config-next": "14.3.0"
+  }
+}
