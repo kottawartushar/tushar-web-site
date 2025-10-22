@@ -20,7 +20,7 @@ export default async function CertificationsPage() {
 
   // Credly profile details
   const credlyUrl = "https://www.credly.com/users/tushar-kottawar";
-  const credlyLinkText = "Tushar Kottawar — Credly Profile";
+  const credlyTitle = "Verified Credentials on Credly";
   const credlyShort =
     "View all my verified digital credentials and badges issued by Credly.";
 
@@ -40,7 +40,7 @@ export default async function CertificationsPage() {
 
         {/* Six Sigma Certification Card */}
         <div className="border rounded-lg p-6 mb-6 shadow-sm bg-slate-50 hover:shadow-md transition-shadow">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="flex flex-col items-center text-center gap-4">
             <div>
               <h2 className="text-xl font-semibold mb-2">{localPdfTitle}</h2>
               <p className="text-slate-700">{localPdfShort}</p>
@@ -49,7 +49,7 @@ export default async function CertificationsPage() {
               href={localPdfPath}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-accent text-white font-medium shadow hover:opacity-95"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-accent text-white font-medium shadow hover:opacity-95"
               aria-label={`View ${localPdfTitle}`}
             >
               View Certificate
@@ -59,21 +59,19 @@ export default async function CertificationsPage() {
 
         {/* Credly Profile Card */}
         <div className="border rounded-lg p-6 mb-6 shadow-sm bg-slate-50 hover:shadow-md transition-shadow">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="flex flex-col items-center text-center gap-4">
             <div>
-              <h2 className="text-xl font-semibold mb-2">
-                Verified Credentials on Credly
-              </h2>
+              <h2 className="text-xl font-semibold mb-2">{credlyTitle}</h2>
               <p className="text-slate-700">{credlyShort}</p>
             </div>
             <a
               href={credlyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-accent text-white font-medium shadow hover:opacity-95"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-accent text-white font-medium shadow hover:opacity-95"
               aria-label="View Credly Profile"
             >
-              {credlyLinkText}
+              View My Credly Profile
             </a>
           </div>
         </div>
