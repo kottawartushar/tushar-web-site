@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { getAllFrontmatterFromFolder } from "../../lib/mdx";
 
-export const revalidate = 0; // no ISR for now; change if needed
+export const revalidate = 0;
 
 export default async function ProjectsPage() {
-  // read frontmatter from /projects/*.md
   const projects = getAllFrontmatterFromFolder("projects") || [];
 
-  // simple sorting: if frontmatter.date exists, newest first
   projects.sort((a, b) => {
     if (a.date && b.date) return new Date(b.date) - new Date(a.date);
     return 0;
@@ -28,11 +26,13 @@ export default async function ProjectsPage() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold">
-                      <Link href={`/projects/${p.slug}`}>
-                        <a className="hover:underline">{p.title || p.slug}</a>
+                      <Link href={`/projects/${p.slug}`} className="hover:underline">
+                        {p.title || p.slug}
                       </Link>
                     </h3>
+
                     {p.description && <p className="text-slate-600 mt-2">{p.description}</p>}
+
                     <div className="mt-3 flex flex-wrap gap-2">
                       {(p.tech || p.tags || []).slice(0, 6).map((t, i) => (
                         <span key={i} className="text-xs px-2 py-1 bg-slate-100 rounded-full text-slate-700">
