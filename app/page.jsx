@@ -75,58 +75,6 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Projects section (anchor) */}
-      <section id="projects" className="border-t">
-        <div className="max-w-5xl mx-auto px-6 py-12">
-          <h2 className="text-2xl font-semibold mb-4">Projects</h2>
-          <p className="text-slate-600 mb-6">Featured work and case studies — click to read more.</p>
-
-          {/* Placeholder project cards (we'll auto-populate from /projects/*.md later) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-4 border rounded-lg shadow-sm">
-              <div className="font-semibold">Fraud Ops Dashboard</div>
-              <div className="text-sm text-slate-600 mt-2">ETL, LookML & dashboarding to reduce fraud reporting time.</div>
-            </div>
-
-            <div className="p-4 border rounded-lg shadow-sm">
-              <div className="font-semibold">Bug Governance System</div>
-              <div className="text-sm text-slate-600 mt-2">Process automation and SLA tracking.</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications section (anchor) */}
-      <section id="certifications" className="border-t bg-slate-50">
-        <div className="max-w-5xl mx-auto px-6 py-12">
-          <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
-          <p className="text-slate-600 mb-6">Selected certifications and badges.</p>
-
-
-            <div className="text-slate-600">(Certifications content -- temporarily disabled for debugging)</div>
-        </div>
-      </section>
-
-      {/* Rewards & Recognitions (anchor) */}
-      <section id="rewards" className="border-t">
-        <div className="max-w-5xl mx-auto px-6 py-12">
-          <h2 className="text-2xl font-semibold mb-4">Rewards & Recognitions</h2>
-          <p className="text-slate-600 mb-6">Achievements and recognition highlights.</p>
-
-
-            <div className="text-slate-600">(Rewards content -- temporarily disabled for debugging)</div>
-        </div>
-      </section>
-
-      {/* Blog section (anchor) */}
-      <section id="blog" className="border-t bg-slate-50">
-        <div className="max-w-5xl mx-auto px-6 py-12">
-          <h2 className="text-2xl font-semibold mb-4">Blog</h2>
-          <p className="text-slate-600 mb-6">Short posts and technical writeups.</p>
-          <div className="text-slate-600">Blog index will be populated from content/blog/*.md</div>
-        </div>
-      </section>
     </>
   );
 }
