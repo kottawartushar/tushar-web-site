@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 
             <nav className="flex items-center gap-4">
               <a className="text-sm hover:underline" href="#projects">Projects</a>
-              <a className="text-sm hover:underline" href="#certs">Certs</a>
+              <a className="text-sm hover:underline" href="#certifications">Certifications</a>
               <a className="text-sm hover:underline" href="#blog">Blog</a>
 
               <a
