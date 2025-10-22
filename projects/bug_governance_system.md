@@ -1,3 +1,10 @@
+---
+title: "Bug Governance System"
+description: "Developed a centralized bug tracking and governance framework to monitor inflow, outflow, and SLA adherence across priorities (P0–P4). Designed an interactive Plx dashboard, automated email alerts, and bi-weekly review cadence — reducing backlog volume by 84% in five months and improving SLA adherence by 40%."
+tech: ["Plx SQL", "Plx Dashboard", "Plx Alerts", "Google Sheets"]
+focus: ["Fraud Analytics | ETL Automation | Data Visualization"]
+---
+
 # Project Title
 
 Bug Governance System
