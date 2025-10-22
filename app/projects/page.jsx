@@ -61,7 +61,7 @@ export default async function ProjectsPage() {
                   {/* Focus Areas label + tags */}
                   {focus.length > 0 && (
                     <>
-                      <div className="text-sm font-medium text-slate-500 mb-2">Focus Areas</div>
+                      <div className="text-sm font-medium text-slate-500 mb-3">Focus Areas</div>
                       <div className="flex justify-center flex-wrap gap-2 mb-3">
                         {focus.map((f, i) => (
                           <span key={i} className="text-xs px-3 py-1 rounded-full bg-amber-50 text-amber-700">
@@ -75,7 +75,7 @@ export default async function ProjectsPage() {
                   {/* Tech Stack label + tags */}
                   {tech.length > 0 && (
                     <>
-                      <div className="text-sm font-medium text-slate-500 mb-2">Tech Stack</div>
+                      <div className="text-sm font-medium text-slate-500 mb-3">Tech Stack</div>
                       <div className="flex justify-center flex-wrap gap-2 mb-4">
                         {tech.map((t, i) => (
                           <span key={i} className="text-xs px-3 py-1 rounded-full bg-slate-100 text-slate-700">
