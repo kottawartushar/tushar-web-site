@@ -77,21 +77,6 @@ export default async function CertificationsPage() {
             </a>
           </div>
         </div>
-
-        {/* Optional markdown section */}
-        {mdHtml && (
-          <>
-            <h2 className="text-2xl font-semibold mt-8 mb-4">
-              Additional certification notes
-            </h2>
-            <div
-              className="prose prose-lg prose-slate max-w-none leading-relaxed
-                         prose-headings:font-heading prose-headings:font-semibold
-                         prose-li:my-1 prose-p:my-2 prose-img:rounded-lg"
-              dangerouslySetInnerHTML={{ __html: mdHtml }}
-            />
-          </>
-        )}
       </div>
     </section>
   );
