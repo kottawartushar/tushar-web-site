@@ -16,7 +16,7 @@ export default async function CertificationsPage() {
   // Local PDF path in `public/certifications/Certificate_of_Achievement_Six_Sigma_GB.pdf`
   const localPdfPath = "/certifications/Certificate_of_Achievement_Six_Sigma_GB.pdf";
   const localPdfTitle = "Six Sigma Green Belt Certification";
-  const localPdfShort = "Certificate of Achievement — Six Sigma Green Belt. Downloadable verification of training and skills in process improvement and quality management.";
+  const localPdfShort = "Certified in Lean Six Sigma Green Belt methodologies for process improvement and operational efficiency.";
 
   const credlyUrl = "https://www.credly.com/users/tushar-kottawar";
   const credlyLinkText = "Tushar Kottawar — Credly Profile";
@@ -81,21 +81,6 @@ export default async function CertificationsPage() {
             Click the link above to see verified badges and digital credentials issued by Credly.
           </p>
         </div>
-
-        {/* Optional: render markdown content from content/certifications_and_badges.md */}
-        {mdHtml ? (
-          <>
-            <h2 className="text-2xl font-semibold mt-6 mb-4">Additional certification notes</h2>
-            <div
-              className="prose prose-lg prose-slate max-w-none leading-relaxed
-                         prose-headings:font-heading prose-headings:font-semibold
-                         prose-li:my-1 prose-p:my-2 prose-img:rounded-lg"
-              dangerouslySetInnerHTML={{ __html: mdHtml }}
-            />
-          </>
-        ) : (
-          <div className="text-slate-600 mt-6">No additional certifications content found at <code>content/certifications_and_badges.md</code>.</div>
-        )}
       </div>
     </section>
   );
