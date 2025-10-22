@@ -6,27 +6,27 @@ export default function RewardsPage() {
   // Awards & recognitions data
   const rewards = [
     {
-      title: "Bronze Award — GB Project",
+      title: "Bronze Award — Automation of Insights for Internal Communication (Six Sigma GB Project)",
       description:
-        "Recognized with the Bronze Award for excellence in the Green Belt project — demonstrating process improvement and measurable impact on operational efficiency.",
+        "Recognized with a Bronze Cash Award for automating the text analysis process and finding the key insights, saving up to 10 hours at least.",
       filePath: "/rewards_and_recognitions/Bronze_award_GB_project.pdf",
     },
     {
-      title: "Bronze Award — ISP Metrics",
+      title: "Bronze Award — Intelligent Succession Planning Metrics Collection",
       description:
-        "Awarded Bronze for impactful contributions towards ISP metrics improvement through automation and analytics-led process optimization.",
-      filePath: "/rewards_and_recognitions/Bronze_award_ISP_metircs.pdf",
+        "Recognized with a Bronze Cash Award for rapidly developing and supporting new metrics collection process using Google Analytics and SOP definition — ensuring timely and sustainable reporting for internal metrics.",
+      filePath: "/rewards_and_recognitions/Bronze_award_ISP_metrics.pdf",
     },
     {
-      title: "EE Kudos Certificate (Individual)",
+      title: "Thank You Award — Be Committed (Employee Engagement Team)",
       description:
-        "Earned Kudos recognition for individual excellence and dedication in delivering high-quality analytical insights and operational reporting.",
+        "Recognized for exceptional dedication and collaboration as part of the Employee Engagement Team. Contributed to organizing large-scale virtual events that strengthened team morale and engagement during a challenging period.",
       filePath: "/rewards_and_recognitions/EE_Kudos_Certificate.png",
     },
     {
-      title: "EE Kudos Certificate (Team Lead)",
+      title: "Thank You Award — Be Committed (Team Leadership Appreciation)",
       description:
-        "Recognized for outstanding leadership and collaboration as Team Lead — driving success in cross-functional analytics initiatives.",
+        "Recognized by the HRS leadership team for sustained efforts in organizing monthly Employee Engagement events that strengthened morale, collaboration, and team culture during the pandemic.",
       filePath: "/rewards_and_recognitions/EE_Kudos_Certificate_Team_Lead.png",
     },
   ];
