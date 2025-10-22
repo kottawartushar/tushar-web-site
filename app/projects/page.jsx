@@ -42,7 +42,7 @@ export default async function ProjectsPage() {
             return (
               <article
                 key={p.slug}
-                className="group border rounded-lg p-2 shadow-sm hover:shadow-md transition-shadow bg-slate-50 flex flex-col"
+                className="group border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow bg-slate-50 flex flex-col max-w-2xl mx-auto w-full"
               >
                 {/* Top / grow area */}
                 <div className="flex-1 flex flex-col items-center text-center">
@@ -53,7 +53,7 @@ export default async function ProjectsPage() {
                   </h3>
 
                   {p.description && (
-                    <p className="text-slate-600 text-base leading-relaxed tracking-wide text-left mb-2 max-w-3xl mx-auto">
+                    <p className="text-slate-600 text-base leading-relaxed tracking-wide mx-auto max-w-prose mb-2">
                       {p.description}
                     </p>
                   )}
