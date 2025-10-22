@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="min-h-screen flex flex-col">
         <header className="w-full border-b">
-          <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             {/* compact logo: circle with initials only */}
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-primary-400 to-primary-600 flex items-center justify-center text-white font-bold">
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
 
-            <nav className="flex items-center gap-6 ml-8 md:ml-12 lg:ml-16">
+            <nav className="flex items-center gap-4 ml-8 md:ml-12 lg:ml-16">
               <a className="text-sm hover:underline" href="/projects">Projects</a>
               <a className="text-sm hover:underline" href="/certifications">Certifications</a>
               <a className="text-sm hover:underline" href="/rewards">Rewards</a>
