@@ -1,7 +1,7 @@
 import { getMDXFromFile } from "../lib/mdx";
 import Image from "next/image";
 import SocialLinks from "../components/SocialLinks";
-import { MDXRemote } from "next-mdx-remote/rsc";
+//import { MDXRemote } from "next-mdx-remote/rsc";
 
 export default async function HomePage() {
   // Hero content (try to read content/introduction.md)
@@ -108,7 +108,7 @@ export default async function HomePage() {
               <MDXRemote source={certsMDX} />
             </div>
           ) : (
-            <div className="text-slate-600">No certifications content found. (File: content/certifications_and_badges.md)</div>
+            <div className="text-slate-600">(Certifications content -- temporarily disabled for debugging)</div>
           )}
         </div>
       </section>
@@ -124,7 +124,7 @@ export default async function HomePage() {
               <MDXRemote source={rewardsMDX} />
             </div>
           ) : (
-            <div className="text-slate-600">No rewards content found. (File: content/rewards_and_recognition.md)</div>
+            <div className="text-slate-600">(Rewards content -- temporarily disabled for debugging)</div>
           )}
         </div>
       </section>
