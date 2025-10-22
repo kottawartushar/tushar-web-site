@@ -5,9 +5,6 @@ tech: ["Plx SQL", "Plx Dashboard", "Plx Alerts", "Google Sheets"]
 focus: ["Fraud Analytics | ETL Automation | Data Visualization"]
 ---
 
-# Project Title
-
-Bug Governance System
 
 **Organization / Client:** Ad Astra Consultants / Google
 

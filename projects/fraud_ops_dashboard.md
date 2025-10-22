@@ -5,9 +5,6 @@ tech: ["SQL", "LookML", "Hex", "Cursor", "GitHub"]
 focus: ["Fraud Analytics | ETL Automation | Data Visualization"]
 ---
 
-# Project Title
-
-Fraud Operations Dashboard
 
 **Organization / Client:** Turing / Aircall
 
