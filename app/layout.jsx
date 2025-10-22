@@ -19,9 +19,10 @@ export default function RootLayout({ children }) {
             </div>
 
             <nav className="flex items-center gap-4">
-              <a className="text-sm hover:underline" href="#projects">Projects</a>
-              <a className="text-sm hover:underline" href="#certifications">Certifications</a>
-              <a className="text-sm hover:underline" href="#blog">Blog</a>
+              <a className="text-sm hover:underline" href="/projects">Projects</a>
+              <a className="text-sm hover:underline" href="/certifications">Certifications</a>
+              <a className="text-sm hover:underline" href="/rewards">Rewards</a>
+              <a className="text-sm hover:underline" href="/blog">Blog</a>
 
               <a
                 className="ml-3 inline-flex items-center gap-2 rounded-full px-4 py-2 bg-accent text-white text-sm font-medium shadow"
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-5xl mx-auto px-6 py-6 text-sm text-slate-600 flex items-center justify-between">
             <div>© {new Date().getFullYear()} Tushar Kottawar</div>
             <div>
-              <a className="hover:underline" href="mailto:kottawartushar084@gmail.com">kottawartushar084@gmail.com</a>
+              <a className="hover:underline" href="mailto:your-email@example.com">your-email@example.com</a>
             </div>
           </div>
         </footer>
