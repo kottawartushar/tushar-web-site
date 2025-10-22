@@ -1,5 +1,4 @@
-import { getMDXFromFile, getAllFrontmatterFromFolder } from "../../../lib/mdx";
-import { MDXRemote } from "next-mdx-remote/rsc";
+import { getHTMLFromFile, getAllFrontmatterFromFolder } from "../../../lib/mdx";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -8,12 +7,11 @@ export async function generateStaticParams() {
 }
 
 export default async function ProjectDetail({ params }) {
-  // params may be a Promise in this Next.js runtime — unwrap it first
   const resolvedParams = await params;
   const { slug } = resolvedParams;
 
   try {
-    const { frontmatter, mdxSource } = await getMDXFromFile(`projects/${slug}.md`);
+    const { frontmatter, html } = await getHTMLFromFile(`projects/${slug}.md`);
     return (
       <section className="min-h-screen py-16">
         <div className="max-w-5xl mx-auto px-6">
@@ -27,9 +25,7 @@ export default async function ProjectDetail({ params }) {
             {frontmatter.date ? new Date(frontmatter.date).toLocaleDateString() : null}
           </div>
 
-          <div className="prose max-w-none">
-            <MDXRemote source={mdxSource} />
-          </div>
+          <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </section>
     );
