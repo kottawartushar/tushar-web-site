@@ -32,7 +32,7 @@ export default async function HomePage() {
           <div className="mt-8 flex items-center justify-center md:justify-start">
             <SocialLinks
               gmail="kottawartushar084@gmail.com"
-              linkedin="https://www.linkedin.com/in/your-profile"
+              linkedin="https://www.linkedin.com/in/tusharkottawar"
               github="https://github.com/kottawartushar"
             />
           </div>
