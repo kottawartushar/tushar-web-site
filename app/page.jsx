@@ -103,13 +103,8 @@ export default async function HomePage() {
           <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
           <p className="text-slate-600 mb-6">Selected certifications and badges.</p>
 
-          {certsMDX ? (
-            <div className="prose max-w-none">
-              <MDXRemote source={certsMDX} />
-            </div>
-          ) : (
+
             <div className="text-slate-600">(Certifications content -- temporarily disabled for debugging)</div>
-          )}
         </div>
       </section>
 
@@ -119,13 +114,8 @@ export default async function HomePage() {
           <h2 className="text-2xl font-semibold mb-4">Rewards & Recognitions</h2>
           <p className="text-slate-600 mb-6">Achievements and recognition highlights.</p>
 
-          {rewardsMDX ? (
-            <div className="prose max-w-none">
-              <MDXRemote source={rewardsMDX} />
-            </div>
-          ) : (
+
             <div className="text-slate-600">(Rewards content -- temporarily disabled for debugging)</div>
-          )}
         </div>
       </section>
 
