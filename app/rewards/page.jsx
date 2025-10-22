@@ -44,7 +44,7 @@ export default function RewardsPage() {
           Rewards & Recognitions
         </h1>
         <p className="text-slate-600 mb-8">
-          A showcase of awards and recognitions received for excellence,
+          A showcase of rewards and recognitions received for excellence,
           innovation, and leadership.
         </p>
 
