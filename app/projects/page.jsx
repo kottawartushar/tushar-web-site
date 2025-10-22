@@ -33,7 +33,8 @@ export default async function ProjectsPage() {
           <p className="text-slate-600 max-w-2xl">A selection of analytics projects where I’ve transformed complex data into actionable business insights.</p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Single-column vertical stack */}
+        <div className="flex flex-col gap-6">
           {projects.map((p) => {
             const focus = normalizeArrayField(p.focus || p.focus_area || p.focusArea);
             const tech = normalizeArrayField(p.tech || p.tags);
