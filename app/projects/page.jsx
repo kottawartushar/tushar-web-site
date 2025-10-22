@@ -47,9 +47,7 @@ export default async function ProjectsPage() {
                 {/* Top / grow area */}
                 <div className="flex-1 flex flex-col items-center text-center">
                   <h3 className="text-xl font-semibold mb-3">
-                    <Link href={`/projects/${p.slug}`} className="hover:underline inline-block">
                       {p.title || p.slug}
-                    </Link>
                   </h3>
 
                   {p.description && (
