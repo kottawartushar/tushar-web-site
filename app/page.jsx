@@ -1,4 +1,6 @@
 import { getMDXFromFile } from "../lib/mdx";
+import Image from "next/image";
+import SocialLinks from "../components/SocialLinks";
 
 export default async function HomePage() {
   let front = {};
@@ -15,39 +17,39 @@ export default async function HomePage() {
   }
 
   const title = front.title || "Tushar Kottawar";
-  const subtitle = front.subtitle || "SQL-first • Dashboard-driven • Business-focused";
+  const subtitle = front.subtitle || "I transform operational data into production-ready insights";
   const summary = front.summary || front.description || "Automated ETL, repeatable dashboards and reconciliation playbooks that save analyst time and recover revenue.";
 
   return (
-    <section className="min-h-[70vh] flex items-center">
-      <div className="max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
+    <section className="min-h-[80vh] flex items-center">
+      <div className="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-8">
+        {/* text area - centered */}
+        <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight">{title}</h1>
           <p className="mt-4 text-lg text-slate-600">{subtitle}</p>
-          <p className="mt-6 text-slate-700">{summary}</p>
+          <p className="mt-6 text-slate-700 max-w-2xl mx-auto md:mx-0">{summary}</p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href="/Tushar_Kottawar_CV.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-accent text-white font-medium"
-            >
-              Download Resume
-            </a>
-
-            <a
-              href="mailto:kottawartushar084@gmail.com"
-              className="inline-flex items-center gap-2 rounded-full px-4 py-2 border border-slate-200 text-sm"
-            >
-              Contact
-            </a>
+          <div className="mt-8 flex items-center justify-center md:justify-start">
+            <SocialLinks
+              gmail="kottawartushar084@gmail.com"
+              linkedin="https://www.linkedin.com/in/your-profile"
+              github="https://github.com/kottawartushar"
+            />
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
-          <div className="w-64 h-64 rounded-2xl bg-gradient-to-tr from-primary-300 to-primary-600 flex items-center justify-center text-white text-2xl font-bold">
-            Photo
+        {/* avatar area */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="w-72 h-72 rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/avatar.jpg"
+              alt="Tushar Kottawar"
+              width={720}
+              height={720}
+              sizes="(max-width: 768px) 60vw, 320px"
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
+              priority
+            />
           </div>
         </div>
       </div>
