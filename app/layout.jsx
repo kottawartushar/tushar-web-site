@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
 
-            <nav className="flex items-center gap-4">
+            <nav className="flex items-center gap-6 ml-8 md:ml-12 lg:ml-16">
               <a className="text-sm hover:underline" href="/projects">Projects</a>
               <a className="text-sm hover:underline" href="/certifications">Certifications</a>
               <a className="text-sm hover:underline" href="/rewards">Rewards</a>
