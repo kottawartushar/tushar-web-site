@@ -29,7 +29,7 @@ export default async function CertificationsPage() {
         </div>
 
         <h1 className="text-3xl font-heading font-bold mb-3">Certifications</h1>
-        <p className="text-slate-600 mb-8">Selected certifications and verified badges.</p>
+        <p className="text-slate-600 mb-8">List of all certifications and verified badges.</p>
 
         {/* Local PDF card */}
         <div className="border rounded-lg p-6 mb-8 shadow-sm bg-slate-50">
@@ -67,7 +67,7 @@ export default async function CertificationsPage() {
         {/* Credly CTA */}
         <div className="border rounded-lg p-6 mb-8 shadow-sm">
           <p className="text-slate-700">
-            View all my verified certifications on Credly:&nbsp;
+            View all my verified digital credentials on Credly:&nbsp;
             <a
               href={credlyUrl}
               target="_blank"
@@ -76,9 +76,6 @@ export default async function CertificationsPage() {
             >
               {credlyLinkText}
             </a>
-          </p>
-          <p className="text-xs text-slate-500 mt-2">
-            Click the link above to see verified badges and digital credentials issued by Credly.
           </p>
         </div>
       </div>
