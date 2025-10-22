@@ -2,7 +2,8 @@
 title: "Fraud Ops Dashboard"
 description: "Designed and deployed an automated fraud analytics dashboard to unify data from multiple sources. Built production-grade SQL pipelines and interactive LookML visualizations, cutting fraud reporting time by 60% and investigation turnaround by 30%."
 tech: ["SQL", "LookML", "Hex", "Cursor", "GitHub"]
-focus: ["Fraud Analytics | ETL Automation | Data Visualization"]
+focus: ["Fraud Analytics", "ETL Automation", "Data Visualization"]
+order: 1
 ---
 
 
