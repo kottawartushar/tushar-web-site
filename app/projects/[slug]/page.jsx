@@ -13,15 +13,15 @@ export default async function ProjectDetail({ params }) {
   try {
     const { frontmatter, html } = await getHTMLFromFile(`projects/${slug}.md`);
     return (
-      <section className="min-h-screen py-20 bg-white dark:bg-slate-900">
+      <section className="min-h-screen py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <div className="mb-6">
-            <Link href="/projects" className="text-sm text-slate-700 hover:underline">← Back to projects</Link>
+            <Link href="/projects" className="text-sm text-slate-600 hover:underline">← Back to projects</Link>
           </div>
 
           <h1 className="text-3xl font-heading font-bold mb-2">{frontmatter.title || slug}</h1>
-          {frontmatter.subtitle && <p className="text-slate-700 mb-4">{frontmatter.subtitle}</p>}
-          <div className="mb-6 text-sm text-slate-600">
+          {frontmatter.subtitle && <p className="text-slate-600 mb-4">{frontmatter.subtitle}</p>}
+          <div className="mb-6 text-sm text-slate-500">
             {frontmatter.date ? new Date(frontmatter.date).toLocaleDateString() : null}
           </div>
 
@@ -31,8 +31,7 @@ export default async function ProjectDetail({ params }) {
                        prose-h2:border-b prose-h2:pb-2 prose-h2:mt-12 prose-h2:mb-4
                        prose-strong:text-slate-900 prose-strong:font-semibold
                        prose-li:my-1 prose-p:my-2 prose-img:rounded-xl
-                       prose-hr:my-8 prose-hr:border-slate-200
-                       dark:prose-invert"
+                       prose-hr:my-8 prose-hr:border-slate-200"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
