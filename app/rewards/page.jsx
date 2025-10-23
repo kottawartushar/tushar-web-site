@@ -9,7 +9,7 @@ export default function RewardsPage() {
       title: "Bronze Award — Automation of Insights for Internal Communication (Six Sigma GB Project)",
       description:
         "Recognized with a Bronze Cash Award for automating the text analysis process and finding the key insights, saving up to 10 hours at least.",
-      filePath: "/rewards_and_recognitions/Bronze_award_GB_project.pdf",
+      filePath: "/rewards_and_recognitions/Bronze_award_GB_Project.pdf",
     },
     {
       title: "Bronze Award — Intelligent Succession Planning Metrics Collection",
